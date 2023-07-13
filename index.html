@@ -1,0 +1,342 @@
+<!--DTD(Document Type Dfinition)정의: 
+    문서 타입(DTD)정의는 문서의 구조 및 해당 문서에서 사용할 수 있는 적법한 요소와 속성을 나타냅니다.
+    응용 프로그램은 DTD정의에 따라 문서의 구문 및 구조에 대한 유효성을 검사할 수 있습니다.
+  -->
+<!doctype html>
+
+<!--html문서의 시작,전역속성 lang:ko(휴먼랭귀지:스크린 리더기에서 시각장애인에게 정보를 읽어줄때 사용하는 낭독언어를 의미합니다.)-->
+<html lang="ko">
+
+  <!--제작중인 웹사이트의 제반사항(웹문서와 관련된 모든사항 등, meta정보, 타이틀, 파비콘, 외부 연동 언어)등을 기록합니다.-->
+  <head>
+    <!--1.문자 해독 유니코드 설정-->
+    <meta charset="utf-8">
+    <!--2.반응형 웹 추가 코드(m.naver.comc참고)-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <!--3.웹사이트 키워드 추가-->
+    <meta name="keywords" content="반응형웹 가상 리뉴얼 프로젝트">
+    <!--4.웹사이트 설명 추가-->
+    <meta name="description" content="산업 현장에서 요구되는 웹언어 구현-가상리뉴얼 프로젝트">
+    <!--5.웹사이트 타이틀 추가-->
+    <title>핫트렉스</title>
+    <!--6.파비콘 추가-->
+    <!-- 
+        ※파비콘(favorites + icon)
+          파비콘(favicon)은 즐겨찾기와 아이콘의 합성어로 해당 사이트를 방문했을때 
+          브라우저 상단탭에 나타나는 작은 로고를 의미 합니다.
+          출력크기는 대부분 16X16픽셀로 보여지며 확장자는 png,또는 ico로 제작 합니다.
+
+          제작(50px * 50px)
+
+        ※ico무료 확장자 변환 사이트
+          https://convertico.com/#google_vignette
+
+        ※파비콘 제작 사이즈 참고
+          https://blog.naver.com/shine_phopo/222501504852
+
+    -->
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="images/favicon16.png">
+    <!--link rel="shortcut icon" type="image/png" sizes="32x32" href="images/favicon32.png">
+    <link rel="shortcut icon" type="image/png" sizes="152x152" href="images/favicon152.png"-->
+
+    <!--7.외부 CSS파일 연동-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--8.외부 제이쿼리 압축파일 CDN방식(제이쿼리 닷컴 사이트에 업로드된 압축파일의 URL을 복사해서 사용) 연동(jQuery.com)-->
+    <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+    <!--9.제이쿼리 압축파일에서 사용할 명령어및 문법 조합 스크립트 파일 연동-->
+    <script src="js/motion.js"></script>
+
+  </head>
+
+  <!--제작중인 웹사이트의 기초데이터(텍스트,이미지,멀티미디어) 및 데이터에 의미를 정의내리는 본문 서식 태그가 작성됩니다. -->
+  <body>
+
+    <!--1.header id="header"[명시도:100]************************************************************************************* -->
+    <header id="header">
+      <div class="header_wrap">
+
+          <!--1.1.제1제목-->
+          <h1><a href="index.html"><img src="images/logo.png" alt="핫트랙스"></a></h1>
+
+          <!--★반응형 웹 추가코드(1280px이상 해상도에서는 비표시)-->
+          <p class="nav_view_btn"><button><img src="images/nav_btn.png" alt="전역메뉴 표시"></button></p>
+
+          <!--1.2.탐색요소 집합(navigation: 전역메뉴(항목,리스트)-->
+          <nav>
+              <p class="nav_close_btn"><button><img src="images/nav_btn2.png" alt="전역메뉴 비표시"></button></p>
+              
+              <ul class="gnb">
+                  <li>
+                    <a href="company.html">핫트랙스</a>
+                    <ul>
+                        <li><a href="company.html">인사</a></li>
+                        <li><a href="company2.html">소개</a></li>
+                        <li><a href="company3.html">연혁</a></li>
+                        <li><a href="company4.html">경영</a></li>
+                        <li><a href="company5.html">다짐</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="notice.html">공지사항</a></li>
+                  <li><a href="store.html">매장안내</a></li>
+                  <li><a href="customer.html">고객지원</a></li>
+                  <li><a href="recruit.html">채용정보</a></li>
+              </ul>
+          </nav>
+
+          <!--1.3.쇼핑몰 바로가기-->
+          <p><a href="https://hottracks.kyobobook.co.kr/ht/welcomeMain" target="_blank">온라인쇼핑몰 바로가기</a></p>
+
+
+      </div>
+    </header>
+    <!--1.header end ******************************************************************************************************* -->
+
+
+    <!--2.div id="container"[명시도:100]************************************************************************************* -->
+    <div id="container">
+
+        <!--
+          ※화면을 꽉채우는 배경이미지 또는 단색이 적용되는 구역
+        
+        -->
+
+        <!--2.1.주제별 대그룹1[명시도10](2중 구조)-->
+        <section class="visual">
+            <h2>핫트랙스 소개</h2>
+
+            <!--핫트랙스 소개 리스트 항목(100% x3 = 300%)-->
+            <ul class="visual_slide">
+                <li class="v1">
+                    <div>일상 생활에서 만나는<br>새로움 즐거움 편안함</div>
+                </li>
+
+                <li class="v2">
+                    <div>우주 정복의 핫트랙스<br>새로운 행성으로 도약</div>
+                </li>
+
+                <li class="v3">
+                    <div>이세상에 제일 좋은 양은<br>바로 핫트랙스 양!~</div>
+                </li>
+            </ul>
+
+            <!--비주얼 슬라이드 컨트롤러1-->
+            <div class="visual_controls1">
+              <button><img src="images/visual_prev_btn.png" alt="이전 소개 이동"></button>
+              <button><img src="images/visual_next_btn.png" alt="다음 소개 이동"></button>
+            </div>
+
+            <!--비주얼 슬라이드 컨트롤러2-->
+            <div class="visual_controls2">
+              <button><img src="images/visual_pause_btn.png" alt="자동재생 정지"></button>
+              <p><span>01</span>/03</p>
+              <button><img src="images/visual_plus_btn.png" alt="자동재생 정지"></button>
+            </div>
+
+        </section>
+
+        <!--2.2.주제별 대그룹2[명시도10]-->
+        <section class="news">
+
+          <h2><span>핫트랙스 소식</span></h2>
+
+          <ol>
+            <li>
+                <a href="#">
+                  <p><img src="images/news_img1.jpg" alt="핫트랙스 달지점 오픈행사 현장"></p>
+                  <div>
+                    <p><strong>핫트랙스 달 지점 오픈 (02/30~02/31)</strong></p>
+                    <p>이제 핫트랙스를 태양계에서 만나보세요. 달 지점 오픈!<br>
+                      오픈 이벤트로 운석 증정 행사까지!</p>
+                  </div>
+                </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <p><img src="images/news_img2.jpg" alt="모나미 153 볼펜 핫트랙스 에디션 제품사진"></p>
+                <div>
+                  <p><strong>모나미 153 볼펜 핫트랙스 에디션</strong></p>
+                  <p>오직 핫트랙스에서만 만나볼 수 있는 디자인!<br>
+                    모나미 볼펜이 봄 향기를 머금고 출시됐어요.</p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <p><img src="images/news_img3.jpg" alt="BTS싸인 증정 행사 현장"></p>
+                <div>
+                  <p><strong>BTS 싸인 증정 행사 (4/1~4/9)</strong></p>
+                  <p>지금 핫트랙스에서 3만원 이상 구매 시 BTS 싸인 증정!<br>
+                    문구도 구매하고 방탄소년단 싸인도 갖자!</p>
+                </div>
+              </a> 
+            </li>
+
+            <li class="news_last">
+              <a href="#">
+
+                <p><img src="images/news_img4.jpg" alt="2024년 핫트랙스 캘린더"></p>
+
+                <div class="news_box">
+                  <p><strong>아기자기한 하루를 위해</strong></p>
+                  
+                  <p>얼마 남지 않은 2023년...!<br>
+                    보내기 아쉽지만 곧 다가오는 2024년도 준비해야겠죠?<br>
+                    2024년 준비를 위한 필수품, 2024 캘린더
+                  </p>
+
+                  <p>
+                    핫트랙스 전매장에서 7만원 이상 구매하시면<br>
+                    2023년을 함께할 핫트랙스 탁상 캘린더를 드립니다!
+                  </p>
+
+                  <p class="news_a">자세히 보기</p>
+                </div>
+
+              </a> 
+            </li>
+
+
+          </ol>
+        </section>
+        
+        <!--2.3.주제별 대그룹3[명시도10](2중 구조)-->
+        <section class="menu">
+          <div class="menu_wrap">
+
+            <h2>지금 핫트랙스에서<br>만나보세요</h2>
+
+            <ul>
+              <li><a href="#">디자인문구</a></li>
+              <li><a href="#">디지털/자동차</a></li>
+              <li><a href="#">필기구</a></li>
+              <li><a href="#">오피스</a></li>
+              <li><a href="#">리빙/생활가전</a></li>
+              <li><a href="#">키친</a></li>
+              <li><a href="#">푸드</a></li>
+              <li><a href="#">가구수납</a></li>
+              <li><a href="#">패션잡화</a></li>
+              <li><a href="#">뷰티/헬스</a></li>
+              <li><a href="#">여행/취미</a></li>
+              <li><a href="#">유아동</a></li>
+              <li><a href="#">음반/영상</a></li>
+              <li><a href="#">핫트라이브</a></li>
+            </ul>
+
+            <p>당신의 삶에 활기를 더해줄 핫트랙스의 디자인 문구를 만나보세요.</p>
+
+            <p><a href="#">상품보러가기</a></p>
+          </div>
+        </section>
+
+        <!--2.4.주제별 대그룹4[명시도10]-->
+        <section class="notice">
+
+          <h2><span>매장 공지사항</span></h2>
+
+          <ol>
+              <li>
+                  <a href="#">
+                      <p><strong>핫트랙스 수성 지점<br>폐업 안내</strong></p>
+                      <p>안녕하세요. 핫트랙스입니다.<br>
+                        우주 폭풍으로 인해 핫트랙스 수성 지점이<br>
+                        폐업합니다.</p>
+                      <p>2541. 02. 31.</p>
+                  </a>
+              </li>
+
+              <li>
+                <a href="#">
+                    <p><strong>핫트랙스 화성 지점<br>폐업 안내</strong></p>
+                    <p>안녕하세요. 핫트랙스입니다.<br>
+                      우주 폭풍으로 인해 핫트랙스 화성 지점이<br>
+                      폐업합니다.</p>
+                    <p>2541. 02. 31.</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                    <p><strong>핫트랙스 목성 지점<br>폐업 안내</strong></p>
+                    <p>안녕하세요. 핫트랙스입니다.<br>
+                      우주 폭풍으로 인해 핫트랙스 목성 지점이<br>
+                      폐업합니다.</p>
+                    <p>2541. 02. 31.</p>
+                </a>
+              </li>
+              
+              <li>
+            <a href="#">
+                <p><strong>핫트랙스 토성 지점<br>폐업 안내</strong></p>
+                <p>안녕하세요. 핫트랙스입니다.<br>
+                  우주 폭풍으로 인해 핫트랙스 토성 지점이<br>
+                  폐업합니다.</p>
+                <p>2541. 02. 31.</p>
+            </a>
+        </li>
+          </ol>
+
+        </section>
+
+        <!--2.5.주제별 대그룹5[명시도10](2중 구조)-->
+        <section class="job">
+          <div class="job_wrap">
+
+              <div class="job_title">
+                <h2>핫트랙스의<br>노예가 되세요</h2>
+                <p>저희 핫트랙스에서는 항상 노예를 구하고있습니다<br>
+                  지금 핫트랙스의 일원이 되어 자본주의를 타파하고<br>
+                  부의 재분배를 위해 기여하세요</p>
+              </div>
+
+              <ul>
+                  <li><a href="#">핫트랙스<br>채용공고</a></li>
+                  <li><a href="#">CEO<br>인사말</a></li>
+                  <li><a href="#">핫트랙스<br>복지혜택</a></li>
+              </ul>  
+
+          </div>
+        </section>
+
+    </div>
+    <!--2.container end ***************************************************************************************************** -->
+
+
+    <!--3.footer id="footer"[명시도:100]************************************************************************************* -->
+    <footer id="footer"> 
+
+        <!--3.1하단로고-->
+        <p><img src="images/footer_logo.jpg" alt="핫트랙스"></p>
+
+        <!--3.2고객지원 메뉴(항목,리스트)-->
+        <ul>
+            <li><a href="#">인재채용</a></li> 
+            <li><a href="#">협력업체등록</a></li> 
+            <li><a href="#">공지사항</a></li> 
+            <li><a href="#">고객센터</a></li> 
+            <li><a href="#">개인정보처리방침</a></li> 
+            <li><a href="#">이용약관</a></li> 
+        </ul>
+
+        <!--3.3주소,담당자 연락처-->
+        <div>
+            <p><b>대표이사</b> 김상훈</p> 
+            <p><b>사업자번호</b> 102-81-29258</p> 
+            <address><b>주소</b> 10881 경기도 파주시 회동길 78</address> 
+            <p><b>개인정보보호책임자</b> 김상훈 PRIVACY@HOTTRACKS.CO.KR</p> 
+            <p><b>대표전화</b> 1661-1112</p> 
+            <p><b>팩스</b> 02-732-1620</p> 
+        </div>
+
+        <!--3.4저작권 표기-->
+        <p>COPYRIGHT©㈜교보핫트랙스. ALL RIGHTS RESERVED.</p>
+        
+    </footer>
+    <!--3.footer end ******************************************************************************************************** -->
+
+
+  </body>
+
+</html>
+
