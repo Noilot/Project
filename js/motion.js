@@ -1,3 +1,4 @@
+/*
 var ag = setInterval("autoGallery()", 3000);
 var slideNum = 1;
 
@@ -15,6 +16,8 @@ function autoGallery() {
       jQuery(".visual_slide").css({ marginLeft: 0 });
     });
 }
+
+*/
 
 jQuery(function () {
   jQuery(".gnb>li>ul").hide();
