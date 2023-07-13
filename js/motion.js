@@ -66,13 +66,6 @@ $(function(){
         $("nav").stop().animate({ marginRight: "-100%" });
     });
     
-    $(window).resize(function(){
-        if( $(window).width() >=1280){
-            $("nav").css({ marginRight:0});
-        }else{
-            $("nav").css({ marginRight:"-100%"});
-        }
-    });
 
 
 
